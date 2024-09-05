@@ -6,7 +6,7 @@
 alert('Задание 1');
 let price = +prompt('Стоимость товара');
 let money = +prompt('Деньги клиента');
-alert((price == money)? 'Покупка совершена' : (price < money)? `Покупка совершена. Сдача ${money-price} р.`: `Для покупки не хватает ${price-money} р.`);
+alert((price == Number && money == Number && price > 0 && money > 0)? ((price == money)? 'Покупка совершена' : (price < money)? `Покупка совершена. Сдача ${money-price} р.`: `Для покупки не хватает ${price-money} р.` ) : 'Неверный формат ввода');
 
 // Используя конструкцию if..else, напишите код, который получает число через prompt, а затем выводит в alert:
 // 1, если значение больше нуля,
