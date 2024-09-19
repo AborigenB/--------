@@ -1,0 +1,19 @@
+.hidden{
+    display: none;
+}
+
+.task4{
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task4 img{
+    width: 64px;
+    height: 64px;
+    top: 250px;
+    left: 25px;
+    position: absolute;
+    transition: 1s;
+}

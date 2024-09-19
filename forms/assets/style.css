@@ -1,0 +1,27 @@
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+    gap: 15px;
+    max-width: 500px;
+    padding: 30px;
+    border: 1px solid cornflowerblue;
+}
+.btn{
+    background-color: cornflowerblue;
+    color: darkblue;
+    padding: 11px 0;
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+.check{
+    display: flex;
+    gap: 5px;
+}
+.error__input{
+    border: 1px solid salmon;
+}
+.error{
+    margin-top: -15px;
+}

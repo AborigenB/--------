@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <h1 id="userEmail"></h1>
+    <form name="signin" method="get">
+        <input type="text" name="email">
+        <p id="emailError" class="error"></p>
+
+        <input type="text" name="password">
+        <p id="passwordError" class="error"></p>
+
+        <div class="check">
+            <input type="checkbox" name="check" id="">
+            <p>Согласие на обработку данных</p>
+        </div>
+        <input type="submit" class="btn">
+    </form>
+    <script>
+        // let form = document.forms[0];
+        let form = document.forms.signin;
+        let emailInput = form.elements.email;
+        let passwordInput = form.elements.password;
+
+        form.addEventListener('submit', userSignin);
+
+        let flag = true;
+        let user;
+        function userSignin(event){
+            event.preventDefault();
+            emailError.innerHTML = '';
+            passwordError.innerHTML = '';
+            flag = true;
+            if(passwordInput.classList.contains('error__input')){
+                passwordInput.classList.remove('error__input');
+            }
+            if(emailInput.classList.contains('error__input')){
+                emailInput.classList.remove('error__input');
+            }
+            if(!emailInput.value){
+                emailError.innerHTML = 'Введите почту';
+                emailInput.classList.add('error__input');
+                flag = false;
+            }
+            if(!passwordInput.value){
+                passwordError.innerHTML = 'Введите пароль';
+                passwordInput.classList.add('error__input');
+                flag = false;
+            }
+
+            if(flag){
+                user = emailInput.value;
+                userEmail.innerHTML = `Здравствуйте ${user}`
+            }
+        }
+        // console.log(emailInput)
+
+
+
+        // emailInput.value = 'email@sdk'
+        // form.elements.check.checked = true;
+
+        // emailInput.onblur = function(){
+        //     if(!emailInput.value.includes('@')){
+        //         emailInput.classList.add('error__input');
+        //         emailError.innerHTML = 'Неверный формат почты';
+        //     }
+        // }
+
+        // emailInput.onfocus = function(){
+        //     if(this.classList.contains('error__input')){
+        //         this.classList.remove('error__input');
+        //         emailError.innerHTML = '';
+        //     }
+        // }
+
+        // let passwordInput = form.elements.password;
+        // passwordInput.onchange = function(){
+        //     if(passwordInput.value.length<5){
+        //         passwordInput.classList.add('error__input');
+        //         passwordError.innerHTML = 'Введите не менее 5 символов'
+        //     }else{
+        //         passwordError.innerHTML = '';
+        //         passwordInput.classList.remove('error__input')
+        //     }
+            
+        // }
+
+
+
+    
+
+    </script>
+</body>
+</html>
