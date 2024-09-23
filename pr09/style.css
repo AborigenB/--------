@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    /* border: 1px solid black; */
+    width: min-content;
+    margin: 0 auto;
+}
+
+.line{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+line p{
+    display: none;
+}
+
+.active{
+    border-bottom: 1px solid red;
+}

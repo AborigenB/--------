@@ -1,0 +1,64 @@
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.Task1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn{
+    background: none;
+    outline: transparent;
+    border: 1px solid #1e6a25;
+    border-radius: 12px;
+    padding: 10px 20px;
+    background-color: #12aa21;
+    color: rgb(250, 246, 240);
+    font-weight: 700;
+    transition: .5s;
+}
+
+.btn_mousedown_active{
+    background-color: black;
+}
+
+.btn_mouseover_active{
+    transform: scale(1.5);    
+}
+
+.btn_mousemove{
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.rad{
+    position: absolute;
+}
+
+.radial{
+    display: block;
+    width: 20px;
+    height: 50px;
+    background: radial-gradient(ellipse, #e66465, transparent);
+}
+
+.btn_r{
+    background-color: red;
+}
+.btn_g{
+    background-color: green;
+}
+.btn_b{
+    background-color: blue;
+}
+
+.quadroPedro{
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    border-radius: 15px;
+    border: 1px solid aqua;
+}
