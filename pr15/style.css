@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul,li,a{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.recolor{
+    padding: 10px 20px;
+    border-radius: 12px;
+    outline: none;
+    border: 1px solid rgb(0, 62, 161);
+    background-color: gray;
+    color: white;
+}
+
+.color{
+    width: 500px;
+    height: 500px;
+    border: 1px solid gray;
+    border-radius: 2px;
+}

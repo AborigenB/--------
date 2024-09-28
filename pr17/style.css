@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul,li,a{
+    text-decoration: none;
+}
+
+.content{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.catalog{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,400px));
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: gray;
+}
+
+.card img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.catalog_card{
+    width: 500px;
+    height: auto;
+}
