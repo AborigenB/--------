@@ -62,6 +62,6 @@ sliderNav.addEventListener('click', function(event){
     targetDot.classList.add('active');
     document.querySelector('.slider_img.active').classList.remove('active');
 
-    sliderItems[targetDot.dataset.index].classList.add('active');
+    sliderImageList[targetDot.dataset.index].classList.add('active');
     scrollSlider(targetDot.dataset.index);
 })
